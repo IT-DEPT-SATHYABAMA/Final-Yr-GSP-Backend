@@ -1,0 +1,7 @@
+{
+  "watch": ["src", "node_modules/.prisma/client"],
+  "ext": ".js,.ts",
+  "ignore": ["*.spec.js", "*.test.js"],
+  "ignoreRoot": ["prisma"],
+  "exec": "node --inspect src/index.js"
+}
