@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
   "dev": "nodemon server.js",
-  "start": "node server.js",
+  "start": "node src/server.js",
   "format": "prettier --write \"src/**/*{js,jsx,ts,tsx}\"",
   "prisma:generate": "rimraf node_modules/.prisma && npx prisma generate && npx prisma db push"
 },
