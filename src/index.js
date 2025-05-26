@@ -5,7 +5,7 @@ import { createAdmin } from "./handlers/admin.js"
 
 dotenv.config();
 
-const port = process.env.PORT || 9710;
+const port = process.env.PORT || 5000;
 // const port = 7778;
 
 app.listen(port, () => {
