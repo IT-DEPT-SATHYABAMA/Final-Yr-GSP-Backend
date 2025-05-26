@@ -5,15 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon",
-    "start:prod": "node dist/bundle.cjs",
-    "build:es": "esbuild src/index.js --bundle --outdir=dist --platform=node --external:mock-aws-s3 --external:aws-sdk --external:nock",
-    "build": "npm i && webpack --config webpack.config.js",
-    "build:local": "webpack --config webpack.config.js",
-    "format": "prettier --write \"src/**/*{js,jsx,ts,tsx}\"",
-    "prisma:generate": "rimraf node_modules/.prisma && npx prisma generate && npx prisma db push"
-  },
+  "dev": "nodemon server.js",
+  "start": "node server.js",
+  "format": "prettier --write \"src/**/*{js,jsx,ts,tsx}\"",
+  "prisma:generate": "rimraf node_modules/.prisma && npx prisma generate && npx prisma db push"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
